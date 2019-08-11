@@ -10,3 +10,7 @@ const setThisWithCall = function (fn, thisValue, arg) {
 const setThisWithApply = function (fn, thisValue, arg) {
   return fn.apply(thisValue, arg);
 };
+
+const returnNewFunctionOf = function (fn, thisValue, arg) {
+  return fn.bind(thisValue, arg);
+};
