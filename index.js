@@ -12,5 +12,5 @@ const setThisWithApply = function (fn, thisValue, arg) {
 };
 
 const returnNewFunctionOf = function (fn, thisValue, arg) {
-  return fn.bind(thisValue, arg);
+  return fn.bind(thisValue);
 };
