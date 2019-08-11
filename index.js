@@ -11,6 +11,6 @@ const setThisWithApply = function (fn, thisValue, arg) {
   return fn.apply(thisValue, arg);
 };
 
-const returnNewFunctionOf = function (fn, thisValue, arg) {
+const returnNewFunctionOf = function (fn, thisValue) {
   return fn.bind(thisValue);
 };
