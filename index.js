@@ -6,3 +6,7 @@ const justInvoke = function (anotherFunction) {
 const setThisWithCall = function (fn, thisValue, arg) {
   return fn.call(thisValue, arg);
 };
+
+const setThisWithCall = function (fn, thisValue, arg) {
+  return fn.apply(thisValue, arg);
+};
